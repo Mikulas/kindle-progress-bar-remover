@@ -26,8 +26,13 @@ trap clean_up SIGINT SIGTERM
 eraseProgress() {
   waitForEink
   
-  eips -n 0 38 "                                                  "
-  eips 0 39 "                                                  "
+  if [[ ! -e "/mnt/us/launchpad/progress-remover/landscape" ]]; then
+    eips -n 0 38 "                                                  "
+    eips 0 39 "                                                  "
+  else
+    eips -n 0 28 "                                                                    "
+    eips 0 29 "                                                                    "
+  fi
 }
 
 ## Check if we need to look for a book/check if current book is open
