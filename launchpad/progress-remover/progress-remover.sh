@@ -7,16 +7,16 @@ if [[ -z "$cvmPid" ]]; then
   exit 2
 fi
 
-if [[ ! -e "/var/run/progRem.pid" ]]; then
-  echo "Hack to remove progress bar starting up" | /mnt/us/progRem/fbout
-  echo $$ > "/var/run/progRem.pid"
+if [[ ! -e "/var/run/progress-remover.pid" ]]; then
+  echo "Hack to remove progress bar starting up" | /mnt/us/launchpad/progress-remover/fbout
+  echo $$ > "/var/run/progress-remover.pid"
 else
   exit 1
 fi
 
 clean_up() {
-  echo "Hack to remove progress bar shut down" | /mnt/us/progRem/fbout
-  rm /var/run/progRem.pid
+  echo "Hack to remove progress bar shut down" | /mnt/us/launchpad/progress-remover/fbout
+  rm /var/run/progress-remover.pid
   exit
 }
 
