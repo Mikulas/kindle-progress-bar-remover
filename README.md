@@ -27,8 +27,9 @@ All I did was document what some other smart folks had done.  Credit goes to the
 
 * Install
 * While your Kindle is on:
-  * To remove the progress bar press `shift` then `p` then `r`. (launchpad lead-progressbar-remove)
-  * To enable the progress bar back press `shift` then `p` then `e`. (launchpad lead-progressbar-enable)
+  * Remove progress bar by pressing `shift` then `p` then `r`. (launchpad - progressbar - remove)
+  * To enable the progress bar back press `shift` then `p` then `e`. (launchpad - progressbar - enable)
+  * Switch between Portrait/Landscape kindle mode with `shift` then `p` then `l`. (lauchpad - progressbar - toggle mode)
 
 ## Installation
 
